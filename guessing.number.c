@@ -8,7 +8,7 @@ int main()
   srand(time(NULL));
     
     printf("Welcome to World of guessing Numbers!\n ");
-    random = rand() * 100 +1 ; // generating b/w 1 to 100
+    random = rand() % 100 +1 ; // generating b/w 1 to 100
 
 
     do{
