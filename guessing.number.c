@@ -1,11 +1,14 @@
 #include <stdio.h>
+#include <stdio.h>
+#include <line.h>
 int main()
 {
     int random, guess; 
   int  no_of_guesses= 0;
+  srand(time(NULL));
     
     printf("Welcome to World of guessing Numbers!\n ");
-    random = 50; 
+    random = rand() * 100 +1 ; // generating b/w 1 to 100
 
 
     do{
