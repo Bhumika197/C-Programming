@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <stdio.h>
-#include <line.h>
+#include <stdlib.h>
+#include <time.h>
 int main()
 {
     int random, guess; 
@@ -8,11 +8,11 @@ int main()
   srand(time(NULL));
     
     printf("Welcome to World of guessing Numbers!\n ");
-    random = rand() % 100 +1 ; // generating b/w 1 to 100
+    random = rand() % 100 +1 ; 
 
 
     do{
-        printf("\nPlease enter your Guess (betwen 1 to 100) : ");
+        printf("\nPlease enter your Guess (between 1 to 100) : ");
         scanf("%d", &guess);
         no_of_guesses++;
 
