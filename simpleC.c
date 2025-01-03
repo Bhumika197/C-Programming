@@ -5,7 +5,7 @@ int main()
 {
     int choice;
     do{
-    printf("\nWelcome to simple Calculator\n");
+    printf("\n\n\nWelcome to simple Calculator\n");
     printf("Choose any one of the Operation given below\n");
     printf("\n1. Addition");
     printf("\n2. Substration");
@@ -83,6 +83,11 @@ switch(choice){
         printf("Enter Number 2: ");
         scanf("%lf", &N2);
         printf("The Answer is %lf", N1/N2);
+         if(N1 = 0){
+            printf("Enter a valid number as Zero can't be used")
+            }else{
+                printf("The Answer is %d", N1%N2);
+                }
         
             break; 
         }
@@ -92,7 +97,13 @@ switch(choice){
         scanf("%d", &N1);
         printf("Enter Number 2: ");
         scanf("%d", &N2);
-        printf("The Answer is %d", N1%N2);
+         if(N1 = 0){
+            printf("Enter a valid number as Zero can't be used")
+            }else{
+                printf("The Answer is %d", N1%N2);
+                }
+        
+        
         
     
             break;
@@ -111,8 +122,9 @@ printf("The Answer is %lf", a);
     
     
 }
-if(choice > 7){
-        printf("Please enter a valid option!\n");
+if(choice > 7 || choice <= 0){
+        printf("Please enter a valid option!\n Invlaid menu choice! ");
+        continue;
     
     }
     }
