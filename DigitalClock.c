@@ -6,6 +6,7 @@ int input_format();
 
 int main(){
 char time[100];
+
 int format = input_format(); 
 fill_time(time, format);
 printf("Current time: %s", time);
