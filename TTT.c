@@ -5,8 +5,8 @@ int  main()
 {
     while(1){
     printf("\nSelect difficulty level ");
-    printf("\n1. Human");
-    printf("\n2. God (Imposible to win)");
+    printf("\n1.Human");
+    printf("\n2.God (Imposible to win)");
     printf("\n Enter your choice:");
     scanf("%d", &difficulty); 
 
